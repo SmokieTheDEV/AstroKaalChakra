@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap');
+
+@theme {
+  --font-serif: "Cinzel", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-gold-50: #fff9e6;
+  --color-gold-100: #ffefb3;
+  --color-gold-200: #ffe080;
+  --color-gold-300: #ffd14d;
+  --color-gold-400: #ffc21a;
+  --color-gold-500: #e6ac00;
+  --color-gold-600: #b38600;
+  --color-gold-700: #806000;
+  --color-gold-800: #4d3a00;
+  --color-gold-900: #1a1300;
+  
+  --color-royal-black: #0a0a0a;
+  --color-royal-dark: #121212;
+
+  --animate-spin-slow: spin 20s linear infinite;
+}
+
+body {
+  @apply bg-royal-black text-white font-sans antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif;
+}
+
+.mandala-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z' fill='%23e6ac00' fill-opacity='0.03'/%3E%3C/svg%3E");
+}
